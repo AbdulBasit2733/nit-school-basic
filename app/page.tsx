@@ -1,11 +1,8 @@
 'use client'
 import React from 'react'
-
-
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
-import { BookOpen, Users, Award, Heart, ArrowRight, Star, MapPin, Phone, Mail } from 'lucide-react'
+import { BookOpen, Users, Award, Heart, ArrowRight, Star } from 'lucide-react'
 import WaveShape from './components/WaveShape'
 import BlobShape from './components/BlobShape'
 

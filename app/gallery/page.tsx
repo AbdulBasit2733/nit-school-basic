@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Camera, Play, Image as ImageIcon } from 'lucide-react'
+import { Camera, Play } from 'lucide-react'
 import WaveShape from '../components/WaveShape'
 import BlobShape from '../components/BlobShape'
 

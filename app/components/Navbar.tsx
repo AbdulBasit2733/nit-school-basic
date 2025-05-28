@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, BookOpen, ChevronDown } from 'lucide-react'
+import { Menu, X, BookOpen } from 'lucide-react'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
