@@ -11,7 +11,9 @@ export const metadata = {
     "Premier CBSE affiliated school providing quality education from Junior KG to 12th Standard with Islamic Studies. Nurturing students in both Deen and Duniya.",
 };
 
-export default function RootLayout({ children }) {
+import { ReactNode } from "react";
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
