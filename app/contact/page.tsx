@@ -54,7 +54,7 @@ export default function Contact() {
               Contact <span className="gradient-text">Us</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Get in touch with New Iqra Techno. We're here to answer your questions about 
+              Get in touch with New Iqra Techno. We &apos; re here to answer your questions about 
               admissions, academics, and everything about our school community.
             </p>
           </motion.div>

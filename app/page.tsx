@@ -265,7 +265,7 @@ export default function Home() {
               Ready to Join Our School Community?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Take the first step towards your child's bright future. 
+              Take the first step towards your child&apos;s bright future. 
               Contact us today to learn more about admissions and our programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
