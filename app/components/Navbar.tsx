@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, BookOpen } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,13 +18,14 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-white shadow-lg sticky top-0 z-50 px-5">
       <div className="container-width">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
-              <BookOpen className="text-white" size={20} />
+            <div className="py-3 px-3 rounded-full flex items-center justify-center">
+              {/*<BookOpen className="text-white" size={20} />*/}
+              <Image src={'/logo.png'} alt='logo' width={60} height={60}/>
             </div>
             <div>
               <h1 className="text-xl font-bold gradient-text">N.I.T</h1>

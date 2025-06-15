@@ -30,7 +30,7 @@ export default function Home() {
           <BlobShape className="absolute bottom-20 left-10 text-primary-600/10" size={300} />
         </div>
         
-        <div className="container-width relative z-10">
+        <div className="container-width px-5 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
               
               <motion.div
-                className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-lg"
+                className="absolute sm:-bottom-6 sm:-left-6 bottom-0 left-0 bg-white rounded-xl p-4 shadow-lg"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >

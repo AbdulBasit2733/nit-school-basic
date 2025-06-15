@@ -1,21 +1,23 @@
 'use client'
 import Link from 'next/link'
 import { BookOpen, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Youtube } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white sm:px-5 px-3">
       <div className="container-width">
         <div className="py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* School Info */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
-                  <BookOpen className="text-white" size={20} />
-                </div>
+              <div className=" py-2 px-1 bg-white rounded-full flex items-center justify-center">
+              {/*<BookOpen className="text-white" size={20} />*/}
+              <Image src={'/new-logo.png'} alt='logo' width={40} height={40}/>
+            </div>
                 <div>
                   <h3 className="text-xl font-bold">N.I.T</h3>
                   <p className="text-sm text-gray-400">New Iqra Techno</p>

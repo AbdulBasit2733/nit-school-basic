@@ -26,7 +26,8 @@ export default function Gallery() {
     { type: 'image', category: 'Events', title: 'Graduation Ceremony', height: 'h-72' }
   ]
 
-  const categories = ['All', 'Campus', 'Students', 'Events', 'Sports']
+  //const categories = ['All', 'Campus', 'Students', 'Events', 'Sports']
+  const categories = [] as string[]
 
   return (
     <div className="bg-white">

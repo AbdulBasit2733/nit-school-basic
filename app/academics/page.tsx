@@ -104,7 +104,7 @@ export default function Academics() {
                   { icon: GraduationCap, text: "Board Exam Prep" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                    <div className="py-2.5 px-2.5 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
                       <item.icon className="text-white" size={20} />
                     </div>
                     <span className="font-semibold text-gray-700">{item.text}</span>
