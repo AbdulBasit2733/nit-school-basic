@@ -1,21 +1,21 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, BookOpen } from 'lucide-react'
-import Image from 'next/image'
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Academics', href: '/academics' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Events', href: '/events' },
-    { name: 'Contact', href: '/contact' }
-  ]
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Academics", href: "/academics" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Events", href: "/events" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50 px-5">
@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <div className="py-3 px-3 rounded-full flex items-center justify-center">
               {/*<BookOpen className="text-white" size={20} />*/}
-              <Image src={'/logo.png'} alt='logo' width={60} height={60}/>
+              <Image src={"/logo.png"} alt="logo" width={60} height={60} />
             </div>
             <div>
               <h1 className="text-xl font-bold gradient-text">N.I.T</h1>
@@ -64,7 +64,7 @@ export default function Navbar() {
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden border-t border-gray-200"
             >
@@ -80,7 +80,11 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="px-4 pt-2">
-                  <Link href="/contact" className="btn-primary w-full text-center" onClick={() => setIsOpen(false)}>
+                  <Link
+                    href="/contact"
+                    className="btn-primary w-full text-center"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Admissions
                   </Link>
                 </div>
@@ -90,5 +94,5 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
     </nav>
-  )
+  );
 }

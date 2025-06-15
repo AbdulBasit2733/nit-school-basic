@@ -1,15 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  Calendar,
-  MapPin,
-  Clock,
-  Users,
-  Star,
-  Camera,
-  Award,
-  Music,
-} from "lucide-react";
+import { Users, Star, Camera, Award, Music } from "lucide-react";
 import WaveShape from "../components/WaveShape";
 import BlobShape from "../components/BlobShape";
 
@@ -20,6 +11,8 @@ export default function Events() {
     transition: { duration: 0.6 },
   };
 
+  {
+    /*
   const upcomingEvents = [
     {
       title: "Annual Sports Day",
@@ -55,7 +48,8 @@ export default function Events() {
       participants: "All Grades",
     },
   ];
-
+    */
+  }
   const pastEvents = [
     {
       title: "Annual Function 2024",
